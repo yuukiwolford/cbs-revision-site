@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapitre 2 – Surfaces de contact & DDL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-chapter="chap2-surfaces">
+  <header class="top-header">
+    <h1>Chapitre 2 – Surfaces de contact & degrés de liberté</h1>
+    <p>Approfondissement du lien entre géométrie de contact et degrés de liberté.</p>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+    <button class="sidebar-toggle">☰ Menu</button>
+    <h2 class="sidebar-title">Sommaire</h2>
+    <ul class="sidebar-menu">
+      <li><a href="../index.html">🏠 Accueil</a></li>
+      <li class="submenu">
+        <button class="submenu-toggle">📘 Chapitre 1</button>
+        <ul>
+          <li><a href="../chapitre1/index.html">Vue générale</a></li>
+          <li><a href="../chapitre1/types.html">1. Types de dessins</a></li>
+          <li><a href="../chapitre1/coupes.html">2. Coupes, hachures</a></li>
+          <li><a href="../chapitre1/normes.html">3. Éléments normalisés</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <button class="submenu-toggle">🧩 Chapitre 2</button>
+        <ul>
+          <li><a href="index.html">Vue générale</a></li>
+          <li><a href="surfaces.html">1. Surfaces & DDL</a></li>
+          <li><a href="liaisons.html">2. Liaisons usuelles</a></li>
+          <li><a href="metho.html">3. Méthodo schéma cinématique</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <button class="submenu-toggle">⚙ Chapitre 3</button>
+        <ul>
+          <li><a href="../chapitre3/index.html">Vue générale</a></li>
+          <li><a href="../chapitre3/fonctionnelle.html">1. Analyse fonctionnelle</a></li>
+          <li><a href="../chapitre3/reducteurs.html">2. Réducteurs</a></li>
+          <li><a href="../chapitre3/engrenages.html">3. Engrenages</a></li>
+          <li><a href="../chapitre3/autres.html">4. Autres transmissions</a></li>
+          <li><a href="../chapitre3/transfo.html">5. Transformation de mouvement</a></li>
+        </ul>
+      </li>
+      <li><a href="../quiz.html">🧪 Quiz global</a></li>
+      <li><a href="../flashcards.html">🃏 Flashcards</a></li>
+    </ul>
+  </aside>
+
+    <main class="content">
+      <article class="card">
+
+  <h2>🧩 Vue détaillée – Surfaces de contact & degrés de liberté</h2>
+
+  <section class="subsection">
+    <h3><span class="badge">1</span> Solide libre et 6 DDL</h3>
+    <p>
+      Dans l’espace, un <span class="highlight-term">solide libre</span> possède <strong>6 degrés de liberté</strong> :
+    </p>
+    <ul class="nice-list">
+      <li>3 translations : Tx, Ty, Tz.</li>
+      <li>3 rotations : Rx, Ry, Rz.</li>
+    </ul>
+    <p>
+      Une liaison vient <strong>supprimer</strong> certains de ces DDL pour guider le mouvement.
+    </p>
+  </section>
+
+  <section class="subsection">
+    <h3><span class="badge">2</span> Types de surfaces de contact</h3>
+    <ul class="nice-list">
+      <li><strong>Plane / plane :</strong> autorise 2 translations + 1 rotation.</li>
+      <li><strong>Cylindrique / cylindrique :</strong> autorise 1 rotation autour de l’axe + parfois 1 translation axiale.</li>
+      <li><strong>Sphérique / sphérique :</strong> autorise 3 rotations (cas d’une rotule).</li>
+    </ul>
+  </section>
+
+  <section class="subsection">
+    <h3><span class="badge">3</span> Lien surface ↔ liaison</h3>
+    <p>
+      La géométrie des surfaces de contact conditionne directement la <strong>liaison mécanique</strong> :
+    </p>
+    <ul class="nice-list">
+      <li>Guidage plan → appui-plan, glissière.</li>
+      <li>Guidage cylindrique → pivot, pivot glissant.</li>
+      <li>Guidage sphérique → rotule.</li>
+    </ul>
+  </section>
+
+</article>
+
+      <article class="card">
+        <h2>Schéma de synthèse</h2>
+        <p>Survoler l'image : seule la zone sous la souris est zoomée (loupe).</p>
+        <div class="zoom-lens-container">
+          <img src="../assets/img/chap2_surfaces.png" alt="Schéma surfaces de contact & DDL" class="zoom-lens-image">
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <button id="btn-top" class="btn-floating">↑</button>
+  <button id="btn-back" class="btn-floating">←</button>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

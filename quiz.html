@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz global</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body data-chapter="quiz">
+  <header class="top-header">
+    <h1>Quiz global</h1>
+    <p>50 questions pour réviser les 3 chapitres : dessin, liaisons, engrenages & transmissions.</p>
+  </header>
+  <div class="layout">
+      <aside class="sidebar">
+    <button class="sidebar-toggle">☰ Menu</button>
+    <h2 class="sidebar-title">Sommaire</h2>
+    <ul class="sidebar-menu">
+      <li><a href="index.html">🏠 Accueil</a></li>
+      <li class="submenu">
+        <button class="submenu-toggle">📘 Chapitre 1</button>
+        <ul>
+          <li><a href="chapitre1/index.html">Vue générale</a></li>
+          <li><a href="chapitre1/types.html">1. Types de dessins</a></li>
+          <li><a href="chapitre1/coupes.html">2. Coupes, hachures</a></li>
+          <li><a href="chapitre1/normes.html">3. Éléments normalisés</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <button class="submenu-toggle">🧩 Chapitre 2</button>
+        <ul>
+          <li><a href="chapitre2/index.html">Vue générale</a></li>
+          <li><a href="chapitre2/surfaces.html">1. Surfaces & DDL</a></li>
+          <li><a href="chapitre2/liaisons.html">2. Liaisons usuelles</a></li>
+          <li><a href="chapitre2/metho.html">3. Méthodo schéma cinématique</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <button class="submenu-toggle">⚙ Chapitre 3</button>
+        <ul>
+          <li><a href="chapitre3/index.html">Vue générale</a></li>
+          <li><a href="chapitre3/fonctionnelle.html">1. Analyse fonctionnelle</a></li>
+          <li><a href="chapitre3/reducteurs.html">2. Réducteurs</a></li>
+          <li><a href="chapitre3/engrenages.html">3. Engrenages</a></li>
+          <li><a href="chapitre3/autres.html">4. Autres transmissions</a></li>
+          <li><a href="chapitre3/transfo.html">5. Transformation de mouvement</a></li>
+        </ul>
+      </li>
+      <li><a href="quiz.html">🧪 Quiz global</a></li>
+    </ul>
+  </aside>
+
+    <main class="content">
+      <article class="card">
+        <h2>Quiz</h2>
+        <div id="quiz-container">
+          <div id="quiz-question"></div>
+          <ul id="quiz-options"></ul>
+          <button id="quiz-next" class="btn" disabled>Question suivante</button>
+          <p id="quiz-progress"></p>
+          <div id="quiz-feedback" class="quiz-feedback">
+            <span id="feedback-message" class="feedback-message"></span>
+          </div>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <button id="btn-top" class="btn-floating">↑</button>
+  <button id="btn-back" class="btn-floating">←</button>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

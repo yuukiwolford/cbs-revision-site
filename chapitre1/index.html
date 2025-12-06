@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapitre 1 – Dessin industriel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body data-chapter="chap1">
+  <header class="top-header">
+    <h1>Chapitre 1 – Dessin industriel</h1>
+    <p>Types de dessins, coupes et éléments normalisés pour décrire un système mécanique.</p>
+  </header>
+  <div class="layout">
+      <aside class="sidebar">
+    <button class="sidebar-toggle">☰ Menu</button>
+    <h2 class="sidebar-title">Sommaire</h2>
+    <ul class="sidebar-menu">
+      <li><a href="../index.html">🏠 Accueil</a></li>
+      <li class="submenu">
+        <button class="submenu-toggle">📘 Chapitre 1</button>
+        <ul>
+          <li><a href="index.html">Vue générale</a></li>
+          <li><a href="types.html">1. Types de dessins</a></li>
+          <li><a href="coupes.html">2. Coupes, hachures</a></li>
+          <li><a href="normes.html">3. Éléments normalisés</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <button class="submenu-toggle">🧩 Chapitre 2</button>
+        <ul>
+          <li><a href="../chapitre2/index.html">Vue générale</a></li>
+          <li><a href="../chapitre2/surfaces.html">1. Surfaces & DDL</a></li>
+          <li><a href="../chapitre2/liaisons.html">2. Liaisons usuelles</a></li>
+          <li><a href="../chapitre2/metho.html">3. Méthodo schéma cinématique</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <button class="submenu-toggle">⚙ Chapitre 3</button>
+        <ul>
+          <li><a href="../chapitre3/index.html">Vue générale</a></li>
+          <li><a href="../chapitre3/fonctionnelle.html">1. Analyse fonctionnelle</a></li>
+          <li><a href="../chapitre3/reducteurs.html">2. Réducteurs</a></li>
+          <li><a href="../chapitre3/engrenages.html">3. Engrenages</a></li>
+          <li><a href="../chapitre3/autres.html">4. Autres transmissions</a></li>
+          <li><a href="../chapitre3/transfo.html">5. Transformation de mouvement</a></li>
+        </ul>
+      </li>
+      <li><a href="../quiz.html">🧪 Quiz global</a></li>
+      <li><a href="../flashcards.html">🃏 Flashcards</a></li>
+    </ul>
+  </aside>
+
+    <main class="content">
+      <article class="card">
+        <h2>Synthèse du chapitre</h2>
+
+        <h3>1. Types de dessins techniques</h3>
+        <ul class="nice-list">
+          <li><span class="highlight">Schémas :</span> représentation symbolique (hydraulique, électrique...) pour comprendre le <em>fonctionnement</em>.</li>
+          <li><span class="highlight">Dessin d’ensemble :</span> vue globale d’un mécanisme, représentation des pièces assemblées avec nomenclature.</li>
+          <li><span class="highlight">Dessin de définition :</span> dessin de pièce détaillé avec toutes les cotes, tolérances, rugosité, matière, etc.</li>
+          <li><span class="highlight">Croquis :</span> tracés rapides et non normalisés, utilisés en avant-projet pour explorer des solutions.</li>
+          <li><span class="highlight">Perspective éclatée :</span> représentation 3D avec pièces séparées pour visualiser l’ordre de montage.</li>
+        </ul>
+
+        <h3>2. Coupes, hachures et formes technologiques</h3>
+        <ul class="nice-list">
+          <li><span class="highlight">Coupes :</span> permettent de voir l’intérieur des pièces ou assemblages en imaginant un plan de coupe.</li>
+          <li><span class="highlight">Hachures :</span> remplissage des zones coupées, inclinaison et espacement normalisés, souvent 45°.</li>
+          <li><span class="highlight">Formes technologiques :</span> rainures, épaulements, chanfreins, congés, logements de clavette, etc.</li>
+          <li>Les formes technologiques sont représentées avec des <span class="highlight">symboles et règles normalisées</span>.</li>
+        </ul>
+
+        <h3>3. Éléments normalisés / standards</h3>
+        <ul class="nice-list">
+          <li><span class="highlight">Vis, écrous, rondelles :</span> représentés de façon simplifiée, dimensions normalisées (ISO, NF...).</li>
+          <li><span class="highlight">Clavettes, goupilles :</span> assurent la liaison entre arbre et moyeu (transmission de couple).</li>
+          <li><span class="highlight">Roulements :</span> représentés par des symboles simplifiés plutôt que tous les éléments détaillés.</li>
+          <li>On gagne du temps de dessin et on évite de surcharger les plans tout en restant <span class="highlight">non ambigu</span>.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Schéma – Types de dessins</h2>
+        <p>Survoler l’image pour zoomer sur les différentes familles de dessins techniques.</p>
+        <div class="zoom-lens-container zoom-small">
+          <img src="../assets/img/schema_chap1.png" alt="Types de dessins techniques" class="zoom-lens-image zoom-small-image">
+        </div>
+      </article>
+
+      
+    </main>
+  </div>
+
+  <button id="btn-top" class="btn-floating">↑</button>
+  <button id="btn-back" class="btn-floating">←</button>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

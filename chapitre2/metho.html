@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapitre 2 – Méthodologie du schéma cinématique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-chapter="chap2-metho">
+  <header class="top-header">
+    <h1>Chapitre 2 – Méthodologie d’élaboration du schéma cinématique</h1>
+    <p>Étapes détaillées pour passer de l’assemblage réel au schéma cinématique normalisé.</p>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+    <button class="sidebar-toggle">☰ Menu</button>
+    <h2 class="sidebar-title">Sommaire</h2>
+    <ul class="sidebar-menu">
+      <li><a href="../index.html">🏠 Accueil</a></li>
+      <li class="submenu">
+        <button class="submenu-toggle">📘 Chapitre 1</button>
+        <ul>
+          <li><a href="../chapitre1/index.html">Vue générale</a></li>
+          <li><a href="../chapitre1/types.html">1. Types de dessins</a></li>
+          <li><a href="../chapitre1/coupes.html">2. Coupes, hachures</a></li>
+          <li><a href="../chapitre1/normes.html">3. Éléments normalisés</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <button class="submenu-toggle">🧩 Chapitre 2</button>
+        <ul>
+          <li><a href="index.html">Vue générale</a></li>
+          <li><a href="surfaces.html">1. Surfaces & DDL</a></li>
+          <li><a href="liaisons.html">2. Liaisons usuelles</a></li>
+          <li><a href="metho.html">3. Méthodo schéma cinématique</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <button class="submenu-toggle">⚙ Chapitre 3</button>
+        <ul>
+          <li><a href="../chapitre3/index.html">Vue générale</a></li>
+          <li><a href="../chapitre3/fonctionnelle.html">1. Analyse fonctionnelle</a></li>
+          <li><a href="../chapitre3/reducteurs.html">2. Réducteurs</a></li>
+          <li><a href="../chapitre3/engrenages.html">3. Engrenages</a></li>
+          <li><a href="../chapitre3/autres.html">4. Autres transmissions</a></li>
+          <li><a href="../chapitre3/transfo.html">5. Transformation de mouvement</a></li>
+        </ul>
+      </li>
+      <li><a href="../quiz.html">🧪 Quiz global</a></li>
+      <li><a href="../flashcards.html">🃏 Flashcards</a></li>
+    </ul>
+  </aside>
+
+    <main class="content">
+      <article class="card">
+
+  <h2>🧩 Vue détaillée – Méthodologie du schéma cinématique</h2>
+
+  <section class="subsection">
+    <h3><span class="badge">1</span> Identifier les classes d’équivalence cinématique (CEC)</h3>
+    <p>
+      Une <span class="highlight-term">CEC</span> regroupe les pièces qui sont <strong>solidaires en mouvement</strong>
+      (aucun mouvement relatif entre elles).
+    </p>
+    <p>On numérote les CEC : CEC0 (bâti), CEC1, CEC2, etc.</p>
+  </section>
+
+  <section class="subsection">
+    <h3><span class="badge">2</span> Recenser les liaisons</h3>
+    <ul class="nice-list">
+      <li>Identifier la nature de chaque liaison (pivot, glissière, rotule…).</li>
+      <li>Relier les CEC concernées (ex : CEC1–CEC2 par une liaison pivot).</li>
+      <li>Noter les degrés de liberté autorisés par chaque liaison.</li>
+    </ul>
+  </section>
+
+  <section class="subsection">
+    <h3><span class="badge">3</span> Construire le graphe de liaisons</h3>
+    <p>
+      On représente chaque CEC par un <strong>nœud</strong>, et chaque liaison par un
+      <strong>arc</strong> entre deux nœuds.
+    </p>
+    <p>
+      Ce graphe permet de vérifier la <span class="highlight-term">mobilité globale</span> du mécanisme
+      et de détecter les chaînes fermées ou les éventuels surcontraintes.
+    </p>
+  </section>
+
+  <section class="subsection">
+    <h3><span class="badge">4</span> Tracer le schéma cinématique normalisé</h3>
+    <ul class="nice-list">
+      <li>Utiliser les symboles normalisés pour chaque liaison.</li>
+      <li>Respecter les conventions (bâti en bas, chaîne d’énergie, etc.).</li>
+      <li>Indiquer les entrées (moteur) et les sorties (organe entraîné).</li>
+    </ul>
+  </section>
+
+</article>
+
+      <article class="card">
+        <h2>Schéma de synthèse</h2>
+        <p>Survoler l'image : seule la zone sous la souris est zoomée (loupe).</p>
+        <div class="zoom-lens-container">
+          <img src="../assets/img/chap2_metho.png" alt="Schéma de méthodologie du schéma cinématique" class="zoom-lens-image">
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <button id="btn-top" class="btn-floating">↑</button>
+  <button id="btn-back" class="btn-floating">←</button>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

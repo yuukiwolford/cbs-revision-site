@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapitre 3 – Engrenages</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-chapter="chap3-engrenages">
+  <header class="top-header">
+    <h1>Chapitre 3 – Engrenages</h1>
+    <p>Détail des grandeurs caractéristiques et des principaux types d’engrenages.</p>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+    <button class="sidebar-toggle">☰ Menu</button>
+    <h2 class="sidebar-title">Sommaire</h2>
+    <ul class="sidebar-menu">
+      <li><a href="../index.html">🏠 Accueil</a></li>
+      <li class="submenu">
+        <button class="submenu-toggle">📘 Chapitre 1</button>
+        <ul>
+          <li><a href="../chapitre1/index.html">Vue générale</a></li>
+          <li><a href="../chapitre1/types.html">1. Types de dessins</a></li>
+          <li><a href="../chapitre1/coupes.html">2. Coupes, hachures</a></li>
+          <li><a href="../chapitre1/normes.html">3. Éléments normalisés</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <button class="submenu-toggle">🧩 Chapitre 2</button>
+        <ul>
+          <li><a href="../chapitre2/index.html">Vue générale</a></li>
+          <li><a href="../chapitre2/surfaces.html">1. Surfaces & DDL</a></li>
+          <li><a href="../chapitre2/liaisons.html">2. Liaisons usuelles</a></li>
+          <li><a href="../chapitre2/metho.html">3. Méthodo schéma cinématique</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <button class="submenu-toggle">⚙ Chapitre 3</button>
+        <ul>
+          <li><a href="index.html">Vue générale</a></li>
+          <li><a href="fonctionnelle.html">1. Analyse fonctionnelle</a></li>
+          <li><a href="reducteurs.html">2. Réducteurs</a></li>
+          <li><a href="engrenages.html">3. Engrenages</a></li>
+          <li><a href="autres.html">4. Autres transmissions</a></li>
+          <li><a href="transfo.html">5. Transformation de mouvement</a></li>
+        </ul>
+      </li>
+      <li><a href="../quiz.html">🧪 Quiz global</a></li>
+      <li><a href="../flashcards.html">🃏 Flashcards</a></li>
+    </ul>
+  </aside>
+
+    <main class="content">
+      <article class="card">
+
+  <h2>⚙ Vue détaillée – Engrenages</h2>
+
+  <section class="subsection">
+    <h3><span class="badge">1</span> Paramètres géométriques</h3>
+    <ul class="nice-list">
+      <li><strong>Entraxe :</strong> distance entre les axes des deux roues dentées.</li>
+      <li><strong>Nombre de dents Z :</strong> conditionne le rapport de transmission.</li>
+      <li><strong>Module m :</strong> taille caractéristique des dents, doit être identique pour deux roues en prise.</li>
+      <li><strong>Pas primitif :</strong> p = 2πR / Z, même pas pour les deux roues en contact.</li>
+    </ul>
+  </section>
+
+  <section class="subsection">
+    <h3><span class="badge">2</span> Types d’engrenages</h3>
+    <ul class="nice-list">
+      <li><strong>Droits :</strong> dents parallèles à l’axe, fabrication simple mais bruit à grande vitesse.</li>
+      <li><strong>Hélicoïdaux :</strong> plus silencieux, supportent de fortes charges mais engendrent un effort axial.</li>
+      <li><strong>À chevrons :</strong> deux hélicoïdaux opposés qui annulent l’effort axial.</li>
+      <li><strong>Coniques :</strong> pour axes sécants (souvent perpendiculaires).</li>
+      <li><strong>Roue et vis sans fin :</strong> forte réduction, rendement plus faible.</li>
+    </ul>
+  </section>
+
+  <section class="subsection">
+    <h3><span class="badge">3</span> Trains d’engrenages</h3>
+    <p>
+      Un <span class="highlight-term">train d’engrenages</span> combine plusieurs roues dentées.
+    </p>
+    <ul class="nice-list">
+      <li>Rapport global = produit des rapports de chaque étage.</li>
+      <li>Les pignons fous inversent le sens de rotation sans changer le rapport.</li>
+    </ul>
+  </section>
+
+
+<section class="formula-block">
+  <h3>📐 Formules essentielles</h3>
+  <ul>
+    <li><strong>Pas primitif :</strong> p = 2πR / Z</li>
+    <li><strong>Rapport d’engrenage :</strong> R = Z_menue / Z_menante</li>
+    <li><strong>Entraxe :</strong> a = (m/2) (Z1 + Z2)</li>
+  </ul>
+</section>
+
+</article>
+
+      <article class="card">
+        <h2>Schéma de synthèse</h2>
+        <p>Survoler l'image : seule la zone sous la souris est zoomée (loupe).</p>
+        <div class="zoom-lens-container">
+          <img src="../assets/img/chap3_engrenages.png" alt="Schéma des engrenages" class="zoom-lens-image">
+        </div>
+      
+<section class="formula-block">
+  <h3>📐 Formules essentielles</h3>
+  <ul>
+    <li><strong>Pas primitif :</strong> p = 2πR / Z</li>
+    <li><strong>Rapport d’engrenage :</strong> R = Z_menue / Z_menante</li>
+    <li><strong>Entraxe :</strong> a = (m/2) (Z1 + Z2)</li>
+  </ul>
+</section>
+
+</article>
+    </main>
+  </div>
+
+  <button id="btn-top" class="btn-floating">↑</button>
+  <button id="btn-back" class="btn-floating">←</button>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

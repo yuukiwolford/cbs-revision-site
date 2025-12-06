@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapitre 2 – Liaisons mécaniques usuelles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-chapter="chap2-liaisons">
+  <header class="top-header">
+    <h1>Chapitre 2 – Liaisons mécaniques usuelles</h1>
+    <p>Détail des liaisons les plus fréquentes rencontrées dans les mécanismes.</p>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+    <button class="sidebar-toggle">☰ Menu</button>
+    <h2 class="sidebar-title">Sommaire</h2>
+    <ul class="sidebar-menu">
+      <li><a href="../index.html">🏠 Accueil</a></li>
+      <li class="submenu">
+        <button class="submenu-toggle">📘 Chapitre 1</button>
+        <ul>
+          <li><a href="../chapitre1/index.html">Vue générale</a></li>
+          <li><a href="../chapitre1/types.html">1. Types de dessins</a></li>
+          <li><a href="../chapitre1/coupes.html">2. Coupes, hachures</a></li>
+          <li><a href="../chapitre1/normes.html">3. Éléments normalisés</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <button class="submenu-toggle">🧩 Chapitre 2</button>
+        <ul>
+          <li><a href="index.html">Vue générale</a></li>
+          <li><a href="surfaces.html">1. Surfaces & DDL</a></li>
+          <li><a href="liaisons.html">2. Liaisons usuelles</a></li>
+          <li><a href="metho.html">3. Méthodo schéma cinématique</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <button class="submenu-toggle">⚙ Chapitre 3</button>
+        <ul>
+          <li><a href="../chapitre3/index.html">Vue générale</a></li>
+          <li><a href="../chapitre3/fonctionnelle.html">1. Analyse fonctionnelle</a></li>
+          <li><a href="../chapitre3/reducteurs.html">2. Réducteurs</a></li>
+          <li><a href="../chapitre3/engrenages.html">3. Engrenages</a></li>
+          <li><a href="../chapitre3/autres.html">4. Autres transmissions</a></li>
+          <li><a href="../chapitre3/transfo.html">5. Transformation de mouvement</a></li>
+        </ul>
+      </li>
+      <li><a href="../quiz.html">🧪 Quiz global</a></li>
+      <li><a href="../flashcards.html">🃏 Flashcards</a></li>
+    </ul>
+  </aside>
+
+    <main class="content">
+      <article class="card">
+
+  <h2>🧩 Vue détaillée – Liaisons mécaniques usuelles</h2>
+
+  <section class="subsection">
+    <h3><span class="badge">1</span> Liaison pivot</h3>
+    <p>
+      La <span class="highlight-term">liaison pivot</span> autorise une <strong>rotation autour d’un axe</strong>
+      et supprime les 5 autres DDL.
+    </p>
+    <ul class="nice-list">
+      <li>Exemples : charnière de porte, axe de roue.</li>
+      <li>Symbolisée sur les schémas par un axe et un symbole de pivot.</li>
+    </ul>
+  </section>
+
+  <section class="subsection">
+    <h3><span class="badge">2</span> Liaison glissière</h3>
+    <p>
+      La <span class="highlight-term">liaison glissière</span> autorise une <strong>translation selon un axe</strong>,
+      toutes les autres rotations et translations étant bloquées.
+    </p>
+    <ul class="nice-list">
+      <li>Exemples : tiroir, coulisse de machine.</li>
+      <li>Souvent réalisée par un guidage prismatique.</li>
+    </ul>
+  </section>
+
+  <section class="subsection">
+    <h3><span class="badge">3</span> Pivot glissant & hélicoïdale</h3>
+    <ul class="nice-list">
+      <li><strong>Pivot glissant :</strong> rotation + translation selon le même axe (perceuse à colonne).</li>
+      <li><strong>Hélicoïdale :</strong> rotation et translation liées par un pas (vis/écrou).</li>
+    </ul>
+  </section>
+
+  <section class="subsection">
+    <h3><span class="badge">4</span> Rotule, sphère-plan & encastrement</h3>
+    <ul class="nice-list">
+      <li><strong>Rotule :</strong> autorise 3 rotations, utile pour absorber des désalignements.</li>
+      <li><strong>Sphère-plan :</strong> autorise 2 rotations.</li>
+      <li><strong>Encastrement :</strong> supprime les 6 DDL (pièces soudées, collées).</li>
+    </ul>
+  </section>
+
+</article>
+
+      <article class="card">
+        <h2>Schéma de synthèse</h2>
+        <p>Survoler l'image : seule la zone sous la souris est zoomée (loupe).</p>
+        <div class="zoom-lens-container">
+          <img src="../assets/img/chap2_liaisons.png" alt="Schéma des liaisons mécaniques usuelles" class="zoom-lens-image">
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <button id="btn-top" class="btn-floating">↑</button>
+  <button id="btn-back" class="btn-floating">←</button>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
